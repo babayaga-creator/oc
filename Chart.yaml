@@ -1,1 +1,9 @@
+name: nfs-provisioner 
+apiVersion: v2
+version: 1.0
+dependencies: # A list of the chart requirements (optional)
+  - name: nfs-subdir-external-provisioner 
+    version: 5.43.3
+    repository: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner
 
+    
