@@ -2,14 +2,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: awesome-production
+  name: nfs-provisioner
   namespace: default
 spec:
   project: default
   source:
     repoURL: https://github.com/babayaga-creator/oc.git
     targetRevision: main
-    path: nfs-provisioner
+    path: nfs-subdir-external-provisioner
   destination:
     server: https://kubernetes.default.svc
     namespace: nfs-provisioner
